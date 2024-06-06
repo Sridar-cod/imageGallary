@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.b1{
+  border: 2px solid red;
+}
+.header{
+  min-height: 10vh;
+  box-shadow: 7px 15px 30px 4px rgba(207, 207, 207, 0.1);
+}
+.header__search input{
+width: 50vw;
+border-radius: 10px;
+border: 3px dashed ;
+padding: 4px 10px;
+}
+.header__search input:focus{
+  border: 3px solid ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* content */
+.content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 1%;
+  flex-flow: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.img-div{
+ flex-basis: 20%;
+ margin: 1% 1%;
+ min-height: 20vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
+.pagination{
+  margin:4% 1% ;
+}
+.pagination span{
+  font-size: 32px;
+cursor: pointer;
+}
+.pagination h5{
+font-size: 32px;
+cursor: pointer;
+padding: 2px;
+border-radius: 5%;
+text-align: center;
+width: 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.pagination__inner{
+  gap: 70px;
+}
+.pagination h5:hover{
+  color: #2a7cff;
+}
+@media screen and (max-width:600px){
+  .pagination{
+    margin:4% 1% ;
   }
-  to {
-    transform: rotate(360deg);
+  .pagination span{
+    font-size: 24px;
+
+  }
+  .pagination h5{
+    font-size: 24px;
+    width: 25px;
+
+  }
+  .pagination__inner{
+    gap: 25px;
   }
 }
