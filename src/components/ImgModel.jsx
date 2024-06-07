@@ -13,14 +13,7 @@ const Filter = ({ setSearch,search }) => {
     "sports",
     'technology',
     "night",
-    "cityscape",
-    "portraits",
-    "macro",
-    "landscape",
-    'science',
-    'fashion',
-    'music',
-    'technology'
+    "cityscape"
   ];
   const handleFilter = (item) => {
     setSearch("")

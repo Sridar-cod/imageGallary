@@ -35,9 +35,13 @@ const Pagination = ({ pageNums, setPage, page }) => {
     <>
       <div className="pagination  d-flex justify-content-center">
         <div className="d-flex pagination__inner">
-        <img src="./assets/left.svg" width={'30px'} onClick={() => handlePageMove("left")} alt="" />
+          <img
+            src="./assets/left.svg"
+            width={"30px"}
+            onClick={() => handlePageMove("left")}
+            alt=""
+          />
 
-       
           {pageNum.map((num) => {
             return (
               <h5
@@ -53,8 +57,12 @@ const Pagination = ({ pageNums, setPage, page }) => {
               </h5>
             );
           })}
-          <img src="./assets/right.svg" width={'30px'} alt="" onClick={() => handlePageMove("right")}/>
-        
+          <img
+            src="./assets/right.svg"
+            width={"30px"}
+            alt=""
+            onClick={() => handlePageMove("right")}
+          />
         </div>
       </div>
     </>

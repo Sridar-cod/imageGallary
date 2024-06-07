@@ -9,6 +9,11 @@ a{
   min-height: 10vh;
   box-shadow: 7px 15px 30px 4px rgba(207, 207, 207, 0.1);
 }
+.header__addImg h2{
+  font-family: "Jacquard 12", system-ui;
+  font-size: 26px;
+
+}
 .header__search input{
 width: 50vw;
 border-radius: 6px;
@@ -86,19 +91,19 @@ padding: 4px 10px;
 
 /* pagination */
 .pagination{
-  margin:4% 1% ;
+  margin:2% 1% ;
 }
 .pagination img{
   font-size: 32px;
 cursor: pointer;
 }
 .pagination h5{
-font-size: 32px;
+font-size: 24px;
 cursor: pointer;
 padding: 2px;
-border-radius: 5%;
+border-radius: 50%;
 text-align: center;
-width: 50px;
+width: 40px;
 
 }
 .pagination__inner{
@@ -110,7 +115,7 @@ width: 50px;
 
 /* carosel */
 .filter{
-  background-color: rgba(183, 183, 183, 0.409);
+  background-color: rgb(53, 53, 53);
   display: flex;
   gap: 5%;
   justify-content: center;
@@ -133,8 +138,12 @@ width: 50px;
 }
 /* footer */
 .footer{
-  background-color: rgb(215, 215, 215);
-  padding: 5%;
+  background-color: rgb(53, 53, 53);
+  padding: 2% 5%;
+
+}
+.footer p,h4{
+  color: white;
 }
 
 
@@ -154,6 +163,11 @@ width: 50px;
 
 
 @media screen and (max-width:600px){
+  .header__addImg h2{
+    font-family: "Jacquard 12", system-ui;
+    font-size: 18px;
+  
+  }
   .pagination{
     margin:4% 1% ;
   }

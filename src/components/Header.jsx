@@ -18,7 +18,7 @@ const Header = ({ setSearch }) => {
           <img src="./assets/search.png" alt="" width={'25px'} className='header__searchIcon ' onClick={()=>handleSearch()}/>
         </div>
         <div className="header__addImg">
-           <img src="./assets/logo-2.png" alt="" width={'40px'}/> 
+           <h2>Image Haven</h2>
         </div>
       </div>
     </>
