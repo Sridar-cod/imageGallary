@@ -118,14 +118,16 @@ width: 50px;
   padding: 1% 2%;
   flex-wrap: wrap;
 }
-.filter h5{
+.filter p{
   background-color: rgb(255, 255, 255);
-  padding: 5px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
+  margin: 3px;
+  font-weight: 500;
 }
-.filter h5:hover{
+.filter p:hover{
   background-color: black;
   color: rgb(255, 255, 255);
 }

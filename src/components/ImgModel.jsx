@@ -11,6 +11,16 @@ const Filter = ({ setSearch,search }) => {
     "film",
     "people",
     "sports",
+    'technology',
+    "night",
+    "cityscape",
+    "portraits",
+    "macro",
+    "landscape",
+    'science',
+    'fashion',
+    'music',
+    'technology'
   ];
   const handleFilter = (item) => {
     setSearch("")
@@ -24,9 +34,9 @@ const Filter = ({ setSearch,search }) => {
         
         {filters.map((items) => {
           return (
-            <h5 onClick={() => handleFilter(items)}
+            <p onClick={() => handleFilter(items)}
               style={search==items?{backgroundColor:'black',color:'white'}:null}
-            >{items}</h5>
+            >{items}</p>
           )
         })}
       </div>
