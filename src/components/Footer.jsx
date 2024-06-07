@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row w-100">
           <div className="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column align-items-center">
             <img src="./assets/logo-1.png" alt="" width={'200px'} />
-            <h4>Image Heaven</h4>
+            <h4 className='mt-2'>Photo Haven</h4>
           </div>
           <div className="col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 d-lex flex-column justify-content-center align-items-center">
             <div className="">
