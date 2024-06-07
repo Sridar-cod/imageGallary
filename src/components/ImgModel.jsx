@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const ImgModel = () => {
-  return (
-    <div>ImgModel</div>
-  )
+const Filter = ({ setSearch,search }) => {
+  const filters = [
+    "all",
+    "animal",
+    "food",
+    "nature",
+    "travel",
+    "street photography",
+    "film",
+    "people",
+    "sports",
+  ];
+  const handleFilter = (item) => {
+    setSearch("")
+    setSearch(item)
 }
 
-export default ImgModel
+  return (
+    <>
+      <div className="filter">
+        
+        
+        {filters.map((items) => {
+          return (
+            <h5 onClick={() => handleFilter(items)}
+              style={search==items?{backgroundColor:'black',color:'white'}:null}
+            >{items}</h5>
+          )
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Filter;

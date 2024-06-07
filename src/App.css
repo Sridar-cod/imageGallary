@@ -1,19 +1,33 @@
 .b1{
   border: 2px solid red;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .header{
   min-height: 10vh;
   box-shadow: 7px 15px 30px 4px rgba(207, 207, 207, 0.1);
 }
 .header__search input{
 width: 50vw;
-border-radius: 10px;
+border-radius: 6px;
 border: 3px dashed ;
 padding: 4px 10px;
 }
 .header__search input:focus{
   border: 3px solid ;
 }
+.header__search{
+  position: relative;
+}
+.header__searchIcon{
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  cursor: pointer;
+}
+
 
 /* content */
 .content{
@@ -23,18 +37,58 @@ padding: 4px 10px;
   padding: 1%;
   flex-flow: wrap;
 }
-.img-div{
+.imgDiv{
  flex-basis: 20%;
  margin: 1% 1%;
  min-height: 20vh;
  display: flex;
  justify-content: center;
  align-items: center;
+ position: relative;
 }
+/* images */
+
+.imgDiv__like {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffffb0;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  cursor: pointer;
+  transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.imgDiv__like:hover {
+  top: 5%;
+  /* transform: translateY(25px); */
+}
+
+
+.imgDiv__download{
+  position: absolute;
+  right: 5%;
+  bottom: 4%;
+  background-color: aliceblue;
+  width: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 1%;
+  cursor: pointer;
+  transition: .5s;
+}
+.imgDiv__download:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* pagination */
 .pagination{
   margin:4% 1% ;
 }
-.pagination span{
+.pagination img{
   font-size: 32px;
 cursor: pointer;
 }
@@ -51,8 +105,52 @@ width: 50px;
   gap: 70px;
 }
 .pagination h5:hover{
-  color: #2a7cff;
+  color: black;
 }
+
+/* carosel */
+.filter{
+  background-color: rgba(183, 183, 183, 0.409);
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 2%;
+  flex-wrap: wrap;
+}
+.filter h5{
+  background-color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.filter h5:hover{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+/* footer */
+.footer{
+  background-color: rgb(215, 215, 215);
+  padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:600px){
   .pagination{
     margin:4% 1% ;

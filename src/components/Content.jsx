@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ImgCard from "./ImgCard";
+import ImgCard from "./Filter";
 import Pagination from "./Pagination";
 const Content = ({ search }) => {
   const [imgId, setImgId] = useState([]);
@@ -27,7 +27,7 @@ const Content = ({ search }) => {
     );
     setPageLimit(pagelimits);
   };
-  
+
   useEffect(() => {
     if (imgId.length > 0) handlePage(imgId);
   }, [imgId, page]);
