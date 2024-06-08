@@ -17,16 +17,16 @@ function App() {
   const client = createClient(API_KEY);
 
   useEffect(() => {
-    setLoader(true); // Show loader before fetching data
+    setLoader(true);
     client.photos
       .search({ query, per_page: 80, page: pageToDisplay })
       .then((response) => {
         setData(response.photos);
-        setLoader(false); // Hide loader after data is fetched
+        setLoader(false);
       })
       .catch((error) => {
         console.error("Error fetching photos:", error);
-        setLoader(false); // Hide loader in case of error
+        setLoader(false); 
       });
   }, [query, pageToDisplay]);
 

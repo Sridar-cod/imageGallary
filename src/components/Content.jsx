@@ -8,7 +8,7 @@ const Content = ({ query, data, setPageToDisplay,pageToDisplay,loader }) => {
   return (
     <>
       <div className="content">
-        {data && data.map((photo) => <ImgCard loader={loader} photo={photo} query={query} />)}
+        {data.length>0? data.map((photo) => <ImgCard loader={loader} photo={photo} query={query} />) :   <h1 className="mt-5 mb-5" style={{minHeight:'60vh',textAlign:'center'}}>No images found for "{query}". Please try a different search.</h1>}
       </div>
       <Pagination
         pageNums={pageNums}
