@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-const Header = ({ setSearch }) => {
+const Header = ({ setQuery }) => {
   const [innerSearch,setInnerSearch] = useState("")
 
   const handleSearch = () => {
-    setSearch(innerSearch)
+    setQuery(innerSearch)
     
   }
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Pagination = ({ pageNums, setPage, page }) => {
+const Pagination = ({ pageNums, setPageToDisplay, pageToDisplay }) => {
   const [pageIndex, setPageIndex] = useState({ startIndex: 0, endIndex: 5 });
   const pageNum = pageNums.slice(pageIndex.startIndex, pageIndex.endIndex);
 
@@ -27,7 +27,7 @@ const Pagination = ({ pageNums, setPage, page }) => {
   };
 
   const handlepageClick = (pageNum) => {
-    setPage(pageNum);
+    setPageToDisplay(pageNum);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -47,7 +47,7 @@ const Pagination = ({ pageNums, setPage, page }) => {
               <h5
                 className="pagination__inner__h5"
                 style={
-                  page == num
+                  pageToDisplay == num
                     ? { backgroundColor: "#000000", color: "white" }
                     : null
                 }

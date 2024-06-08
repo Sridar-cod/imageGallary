@@ -51,6 +51,21 @@ padding: 4px 10px;
  align-items: center;
  position: relative;
 }
+.imgDiv__mainImg{
+  width: auto;
+}
+.imgDiv__clikedBy{
+  padding: 1% 3%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: aliceblue;
+  font-size: 14px;
+  cursor: pointer;
+}
 /* images */
 
 .imgDiv__like {
@@ -167,6 +182,9 @@ width: 40px;
     font-family: "Jacquard 12", system-ui;
     font-size: 18px;
   
+  }
+  .imgDiv__mainImg{
+    width: 90vw;
   }
   .pagination{
     margin:4% 1% ;

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Filter = ({ setSearch,search }) => {
+const Filter = ({ setQuery,query }) => {
   const filters = [
     "all",
     "animal",
@@ -16,8 +16,8 @@ const Filter = ({ setSearch,search }) => {
     "cityscape"
   ];
   const handleFilter = (item) => {
-    setSearch("")
-    setSearch(item)
+    setQuery("")
+    setQuery(item)
 }
 
   return (
@@ -28,7 +28,7 @@ const Filter = ({ setSearch,search }) => {
         {filters.map((items) => {
           return (
             <p onClick={() => handleFilter(items)}
-              style={search==items?{backgroundColor:'black',color:'white'}:null}
+              style={query==items?{backgroundColor:'black',color:'white'}:null}
             >{items}</p>
           )
         })}
